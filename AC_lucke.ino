@@ -130,8 +130,8 @@ CRGB moja_barva_bela = CRGB(255, 255, 255);
 CRGB moja_barva_orange = CRGB(255, 165, 0);
 CRGB moja_barva_asdf1 = CRGB(100, 100, 100);
 
-#define UPDATES_PER_SECOND 100
-#define FRAMES_PER_SECOND 60
+#define UPDATES_PER_SECOND 80
+#define FRAMES_PER_SECOND 50
 
 CRGBPalette16 currentPalette;
 TBlendType    currentBlending;
@@ -655,7 +655,7 @@ void loop() {
     set_charging_led();
   }
 
-  delay(200);
+  delay(250);
 //  Serial.println("loop END");
 //  Serial.println("####################################################");
 //  Serial.println(" ");
